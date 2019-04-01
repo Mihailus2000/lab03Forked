@@ -75,7 +75,7 @@ EOF
 
 ```ShellSession
 $ cat >> CMakeLists.txt <<EOF
-add_library(print STATIC \${CMAKE_CURRENT_SOURCE_DIR}/sources/print.cpp)
+add_library(print STATIC \${CMAKE_CURRENT_SOURCE_DIR}/sources/print.cpp) 
 EOF
 ```
 
@@ -93,7 +93,7 @@ $ cmake --build _build
 ```ShellSession
 $ cat >> CMakeLists.txt <<EOF
 
-add_executable(example1 \${CMAKE_CURRENT_SOURCE_DIR}/examples/example1.cpp)
+add_executable(example1 \${CMAKE_CURRENT_SOURCE_DIR}/examples/example1.cpp)     # CMAKE_CURRENT_SOURCE_DIR - путь до project
 add_executable(example2 \${CMAKE_CURRENT_SOURCE_DIR}/examples/example2.cpp)
 EOF
 ```
@@ -108,7 +108,7 @@ EOF
 
 ```ShellSession
 $ cmake --build _build
-$ cmake --build _build --target print
+$ cmake --build _build --target print       #указываем что собрать: статические библиотеки или ex1/ex2
 $ cmake --build _build --target example1
 $ cmake --build _build --target example2
 ```
@@ -122,7 +122,7 @@ $ cat log.txt && echo
 hello
 $ rm -rf log.txt
 ```
-
+Получаем только CmakeLists из github
 ```ShellSession
 $ git clone https://github.com/tp-labs/lab03 tmp
 $ mv -f tmp/CMakeLists.txt .
