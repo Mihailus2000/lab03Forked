@@ -1,4 +1,11 @@
-## Laboratory work III
+Пол:1 http://mirror-1.truenetwork.ru/kali kali-rolling/main amd64 tree amd64 1.8.0-1 [49,3 kB]
+Получено 49,3 kB за 2с (27,9 kB/s)
+Выбор ранее не выбранного пакета tree.
+(Чтение базы данных … на данный момент установлено 441793 файла и каталога.)
+Подготовка к распаковке …/tree_1.8.0-1_amd64.deb …
+Распаковывается tree (1.8.0-1) …
+Настраивается пакет tree (1.8.0-1) …
+Обрабатываются триггеры для man-db (2.8.5-2) …## Laboratory work III
 
 Данная лабораторная работа посвещена изучению систем автоматизации сборки проекта на примере **CMake**
 
@@ -299,14 +306,17 @@ Install the project...
 
 $ tree _install
 
-Пол:1 http://mirror-1.truenetwork.ru/kali kali-rolling/main amd64 tree amd64 1.8.0-1 [49,3 kB]
-Получено 49,3 kB за 2с (27,9 kB/s)
-Выбор ранее не выбранного пакета tree.
-(Чтение базы данных … на данный момент установлено 441793 файла и каталога.)
-Подготовка к распаковке …/tree_1.8.0-1_amd64.deb …
-Распаковывается tree (1.8.0-1) …
-Настраивается пакет tree (1.8.0-1) …
-Обрабатываются триггеры для man-db (2.8.5-2) …
+_install
+├── cmake
+│   ├── print-config.cmake
+│   └── print-config-noconfig.cmake
+├── include
+│   └── print.hpp
+└── lib
+    └── libprint.a
+
+3 directories, 4 files
+
 
 ```
 
